@@ -263,8 +263,8 @@ h6 {
     font-family: var(--font-display);
     font-weight: 700;
     line-height: 1.2;
-    letter-spacing: 0.05em;
-    /* Wide kerning for power */
+    letter-spacing: -0.02em;
+    /* Tighter kerning for modern feel */
     color: var(--navy-900);
 }
 
