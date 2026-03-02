@@ -1,86 +1,51 @@
 /* ══════════════════════════════════════════════
-   UNIQUE IN-DEPTH (SPLIT PANEL) DESIGN
+   UNIQUE IN-DEPTH — TIMELINE OVERRIDES
    ══════════════════════════════════════════════ */
 
+/* The old details-grid split-panel is replaced by .timeline-list */
 .details-grid {
     display: flex;
     flex-direction: column;
-    gap: var(--space-5xl);
-    padding-top: var(--space-xl);
+    gap: 0;
 }
 
+/* Detail card reset (kept for backward compat) */
 .detail-card {
-    display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
-    align-items: center;
-    min-height: 600px;
+    display: block;
     background: transparent;
     border: none;
     position: relative;
-    overflow: hidden;
-}
-
-.detail-card:nth-child(even) .detail-image-side {
-    order: 2;
+    overflow: visible;
+    padding: 0;
 }
 
 .detail-image-side {
-    height: 100%;
-    min-height: 500px;
-    position: relative;
-}
-
-.detail-image-side img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0 !important;
-    filter: brightness(0.9) contrast(1.05);
+    display: none;
+    /* Images removed from In-Depth section */
 }
 
 .detail-content-side {
-    padding: var(--space-3xl) var(--space-4xl);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.detail-card:nth-child(even) .detail-content-side {
-    padding-left: 0;
-    padding-right: var(--space-4xl);
-}
-
-.detail-card:nth-child(odd) .detail-content-side {
-    padding-right: 0;
-    padding-left: var(--space-4xl);
+    padding: var(--space-xl) 0;
 }
 
 /* Typography & Badges */
 .detail-card h3 {
-    font-size: clamp(2rem, 3.5vw, 2.8rem);
-    margin-bottom: var(--space-xl);
-    line-height: 1.1;
+    font-size: clamp(1.3rem, 2.5vw, 2rem);
+    margin-bottom: var(--space-md);
+    line-height: 1.15;
     color: var(--navy-900);
 }
 
 .detail-card p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--gray-600);
     margin-bottom: var(--space-lg);
     line-height: 1.8;
 }
 
 .detail-card-badge {
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    font-size: 8rem;
-    font-weight: 900;
-    color: var(--gray-100);
-    opacity: 0.4;
-    font-family: var(--font-display);
-    z-index: -1;
-    pointer-events: none;
+    display: none;
+    /* No more large watermark numbers; timeline-num handles this */
 }
 
 /* Theme Accents */
@@ -105,7 +70,7 @@
     background: var(--gray-50);
     padding: var(--space-xl);
     margin-block: var(--space-xl);
-    border-left: 6px solid var(--cyan-500);
+    border-left: 6px solid var(--navy-500);
 }
 
 .detail-callout.indigo {
@@ -137,7 +102,7 @@
     width: 10px;
     height: 10px;
     flex-shrink: 0;
-    background: var(--cyan-500);
+    background: var(--navy-500);
 }
 
 .detail-bullet-list.indigo li::before {
@@ -145,7 +110,7 @@
 }
 
 .detail-bullet-list.violet li::before {
-    background: var(--electric-violet);
+    background: var(--navy-400);
 }
 
 .detail-bullet-list.amber li::before {
@@ -156,26 +121,12 @@
     background: var(--emerald-pulse);
 }
 
-/* Responsive Grid Adjustments */
-@media (max-width: 1200px) {
-    .detail-card {
-        grid-template-columns: 1fr;
-        min-height: auto;
-    }
-
-    .detail-image-side {
-        min-height: 400px;
-        order: -1 !important;
-    }
-
-    .detail-content-side {
-        padding: var(--space-2xl) !important;
-    }
-
+@media (max-width: 768px) {
     .detail-bullet-list {
         grid-template-columns: 1fr;
     }
 }
+
 
 /* ═══ NAVBAR & MOBILE VISIBILITY FIXES ═══ */
 .nav-logo {
