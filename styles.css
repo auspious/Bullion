@@ -410,7 +410,7 @@ section {
 .navbar.scrolled .nav-cta {
     background: var(--navy-900) !important;
     backdrop-filter: none !important;
-    border: none !important;
+    border: 2px solid var(--cyan-500) !important;
     color: var(--white) !important;
 }
 
@@ -482,7 +482,7 @@ section {
     background: rgba(0, 119, 182, 0.18) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
-    border: 1px solid rgba(0, 119, 182, 0.45) !important;
+    border: 2px solid var(--cyan-500) !important;
     color: var(--white) !important;
     padding: 0.6rem 1.5rem !important;
     border-radius: var(--radius-full) !important;
@@ -498,7 +498,7 @@ section {
 
 .nav-cta:hover {
     background: rgba(0, 119, 182, 0.3) !important;
-    border-color: rgba(0, 119, 182, 0.7) !important;
+    border-color: var(--white) !important;
     transform: translateY(-2px) !important;
     box-shadow: 0 8px 32px rgba(27, 82, 153, 0.25) !important;
 }
@@ -758,14 +758,14 @@ section {
     background: rgba(0, 119, 182, 0.18);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(0, 119, 182, 0.45);
+    border: 2px solid var(--cyan-500);
     color: var(--white);
 }
 
 #hero-cta-explore:hover,
 #hero-cta-about:hover {
     background: rgba(0, 119, 182, 0.3);
-    border-color: rgba(0, 119, 182, 0.7);
+    border-color: var(--white);
     transform: translateY(-3px);
     box-shadow: 0 10px 30px rgba(0, 119, 182, 0.25);
 }
