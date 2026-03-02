@@ -2218,9 +2218,9 @@ section {
 }
 
 .footer-social-link:hover {
-    background: rgba(0, 180, 216, 0.15);
-    border-color: rgba(0, 180, 216, 0.3);
-    color: var(--cyan-500);
+    background: rgba(27, 82, 153, 0.15);
+    border-color: rgba(27, 82, 153, 0.3);
+    color: var(--navy-500);
     transform: translateY(-2px);
 }
 
@@ -2238,11 +2238,12 @@ section {
     font-size: 0.88rem;
     color: var(--gray-600);
     padding: 0.25rem 0;
+    white-space: nowrap;
     transition: color var(--duration-fast) var(--ease-out), padding-left var(--duration-fast) var(--ease-out);
 }
 
 .footer-col a:hover {
-    color: var(--cyan-500);
+    color: var(--navy-500);
     padding-left: 8px;
     text-shadow: none;
 }
@@ -2257,7 +2258,7 @@ section {
 
 .footer-contact-item .icon {
     font-size: 1rem;
-    color: var(--cyan-500);
+    color: var(--navy-500);
 }
 
 .footer-bottom {
@@ -2280,7 +2281,7 @@ section {
 }
 
 .footer-bottom-links a:hover {
-    color: var(--cyan-500);
+    color: var(--navy-500);
 }
 
 /* ══════════════════════════════════════════════
