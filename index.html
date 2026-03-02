@@ -66,9 +66,9 @@
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
-    <!-- Styles -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="unique-details.css">
+    <!-- Styles (with cache buster) -->
+    <link rel="stylesheet" href="styles.css?v=1.1">
+    <link rel="stylesheet" href="unique-details.css?v=1.1">
 </head>
 
 <body>
@@ -121,42 +121,42 @@
             <div class="luminous-glow glow-2"></div>
             <canvas id="hero-canvas"></canvas>
             <div class="container">
-                <div class="hero-content">
-                    <h1>Powering Africa's <span class="highlight text-metallic">Digital Future</span></h1>
-                    <p class="hero-subtitle">Closing the technology divide through world-class innovative digital and
-                        financial infrastructure. We partner with global brands to deploy scalable, future-ready
-                        solutions
-                        across the continent.</p>
-                    <div class="hero-actions">
-                        <a href="#services" class="btn btn-primary" id="hero-cta-explore">
-                            Explore Our Solutions
-                            <i data-lucide="arrow-right" class="btn-icon"></i>
-                        </a>
-                        <a href="#about" class="btn btn-outline" id="hero-cta-about">
-                            <i data-lucide="info" class="btn-icon" style="margin-right:4px;"></i>
-                            Learn About Us
-                        </a>
+                <h1><span class="text-white">Powering Africa's</span> <span class="text-metallic">Digital
+                        Future</span></h1>
+                <p class="hero-subtitle">Closing the technology divide through world-class innovative digital and
+                    financial infrastructure. We partner with global brands to deploy scalable, future-ready
+                    solutions
+                    across the continent.</p>
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary" id="hero-cta-explore">
+                        Explore Our Solutions
+                        <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                    <a href="#about" class="btn btn-outline" id="hero-cta-about">
+                        <i data-lucide="info" class="btn-icon" style="margin-right:4px;"></i>
+                        Learn About Us
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Core Pillars</div>
                     </div>
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <div class="stat-number">4</div>
-                            <div class="stat-label">Core Pillars</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="stat-number">1st</div>
-                            <div class="stat-label">Approved Crowdfunding Sandbox in ZW</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="stat-number">2 x ERP</div>
-                            <div class="stat-label">SAP</div>
-                            <div class="stat-label">Microsoft Dynamic 365</div>
-                        </div>
-                        <div class="hero-stat">
-                            <div class="stat-number">∞</div>
-                            <div class="stat-label">Global Partnerships</div>
-                        </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">1st</div>
+                        <div class="stat-label">Approved Crowdfunding Sandbox in ZW</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">2 x ERP</div>
+                        <div class="stat-label">SAP</div>
+                        <div class="stat-label">Microsoft Dynamic 365</div>
+                    </div>
+                    <div class="hero-stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Global Partnerships</div>
                     </div>
                 </div>
+            </div>
             </div>
             <div class="hero-scroll">
                 <span>Scroll</span>
@@ -206,28 +206,30 @@
                     <div class="section-tag">Our Purpose</div>
                     <h2>Vision & Mission</h2>
                 </div>
-                <div class="vision-grid stagger-children">
-                    <div class="vision-card reveal">
+                <div class="vision-grid">
+                    <div class="vision-card reveal-left">
                         <div class="vision-icon">
                             <i data-lucide="eye"></i>
+                            <div class="icon-pulse"></div>
                         </div>
                         <div class="vision-card-content">
+                            <div class="card-num">01</div>
                             <h3>Our Vision</h3>
                             <p>To become a leading African digital transformation partner, enabling inclusive access to
-                                capital,
-                                enterprise technology, and secure digital financial infrastructure.</p>
+                                capital, enterprise technology, and secure digital financial infrastructure.</p>
                         </div>
                     </div>
-                    <div class="vision-card reveal">
-                        <div class="vision-icon">
+                    <div class="mission-card reveal-right">
+                        <div class="vision-icon mission-icon">
                             <i data-lucide="target"></i>
+                            <div class="icon-pulse"></div>
                         </div>
                         <div class="vision-card-content">
+                            <div class="card-num">02</div>
                             <h3>Our Mission</h3>
                             <p>To bridge Africa's technology gap through strategic partnerships, advanced platforms, and
                                 sustainable digital ecosystems that unlock growth, transparency, and global
-                                competitiveness.
-                            </p>
+                                competitiveness.</p>
                         </div>
                     </div>
                 </div>

@@ -374,30 +374,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }, { threshold: 0.5 });
   statsNum.forEach(stat => counterObserver.observe(stat));
 
-  // ── Service Card Hover ──
-  document.querySelectorAll('.service-card').forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const rotateX = ((y - (rect.height / 2)) / (rect.height / 2)) * -3;
-      const rotateY = ((x - (rect.width / 2)) / (rect.width / 2)) * 3;
-      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-6px)`;
-    });
-    card.addEventListener('mouseleave', () => card.style.transform = '');
-  });
 
-  // ── Hero content fade in ──
-  const heroContent = document.querySelector('.hero-content');
-  if (heroContent) {
-    heroContent.style.opacity = '0';
-    heroContent.style.transform = 'translateY(30px)';
-    heroContent.style.transition = 'opacity 1s var(--ease-out), transform 1s var(--ease-out)';
-    setTimeout(() => {
-      heroContent.style.opacity = '1';
-      heroContent.style.transform = 'translateY(0)';
-    }, 500);
-  }
+
+
 
   // ── Contact Form ──
   const contactForm = document.getElementById('contact-form');
