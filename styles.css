@@ -1006,21 +1006,23 @@ section {
 }
 
 .vision-icon {
-    width: 70px;
-    height: 70px;
+    width: 64px;
+    height: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgba(27, 82, 153, 0.05);
     color: var(--navy-500);
-    font-size: 2rem;
+    font-size: 1.8rem;
     position: relative;
-    margin-bottom: var(--space-xs);
+    margin-bottom: var(--space-md);
+    border: 1px solid rgba(27, 82, 153, 0.1);
 }
 
 .mission-icon {
-    color: var(--corp-blue-500);
-    background: rgba(0, 119, 182, 0.05);
+    color: var(--navy-500);
+    background: rgba(27, 82, 153, 0.05);
+    border-color: rgba(27, 82, 153, 0.1);
 }
 
 .icon-pulse {
@@ -1043,20 +1045,28 @@ section {
 
 .card-num {
     position: absolute;
-    top: var(--space-xl);
-    right: var(--space-xl);
+    top: -20px;
+    right: 20px;
     font-family: var(--font-display);
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--gray-100);
+    font-size: 8rem;
+    font-weight: 900;
+    color: var(--navy-900);
+    opacity: 0.04;
     line-height: 1;
     z-index: 0;
     user-select: none;
+    pointer-events: none;
 }
 
 .vision-card-content {
     position: relative;
-    z-index: 1;
+    z-index: 10;
+}
+
+.vision-card-content h3,
+.vision-card-content p {
+    position: relative;
+    z-index: 11;
 }
 
 .vision-card h3 {

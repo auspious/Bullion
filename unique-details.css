@@ -105,11 +105,6 @@
     }
 }
 
-/* Vision & Mission Alignment */
-.vision-card-content h3 {
-    margin-bottom: 0.2rem;
-}
-
 /* ═══ BRANDS SECTION OVERRIDES ═══ */
 .brands-grid {
     display: flex !important;
